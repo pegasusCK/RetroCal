@@ -14,6 +14,7 @@
 		00852B451E9EEE6500F78A8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00852B431E9EEE6500F78A8A /* LaunchScreen.storyboard */; };
 		00852B501E9EEE6500F78A8A /* RetroCalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00852B4F1E9EEE6500F78A8A /* RetroCalTests.swift */; };
 		00852B5B1E9EEE6500F78A8A /* RetroCalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00852B5A1E9EEE6500F78A8A /* RetroCalUITests.swift */; };
+		00D030AD1EA16CB6002FA10F /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00D030AC1EA16CB6002FA10F /* Minecraft.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		00852B561E9EEE6500F78A8A /* RetroCalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroCalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00852B5A1E9EEE6500F78A8A /* RetroCalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroCalUITests.swift; sourceTree = "<group>"; };
 		00852B5C1E9EEE6500F78A8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00D030AC1EA16CB6002FA10F /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		00852B391E9EEE6500F78A8A /* RetroCal */ = {
 			isa = PBXGroup;
 			children = (
+				00D030AC1EA16CB6002FA10F /* Minecraft.ttf */,
 				00852B3A1E9EEE6500F78A8A /* AppDelegate.swift */,
 				00852B3C1E9EEE6500F78A8A /* ViewController.swift */,
 				00852B3E1E9EEE6500F78A8A /* Main.storyboard */,
@@ -237,6 +240,7 @@
 			files = (
 				00852B451E9EEE6500F78A8A /* LaunchScreen.storyboard in Resources */,
 				00852B421E9EEE6500F78A8A /* Assets.xcassets in Resources */,
+				00D030AD1EA16CB6002FA10F /* Minecraft.ttf in Resources */,
 				00852B401E9EEE6500F78A8A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +518,7 @@
 				00852B611E9EEE6500F78A8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00852B621E9EEE6500F78A8A /* Build configuration list for PBXNativeTarget "RetroCalTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				00852B641E9EEE6500F78A8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00852B651E9EEE6500F78A8A /* Build configuration list for PBXNativeTarget "RetroCalUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +536,7 @@
 				00852B671E9EEE6500F78A8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

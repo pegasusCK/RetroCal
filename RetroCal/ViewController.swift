@@ -109,7 +109,9 @@ class ViewController: UIViewController {
                 outputLbl.text = result
             }
             
-            currentOperation = operation
+            //modify equal button behavior
+            runningNumber = result
+            currentOperation = Operation.Empty
         } else {
             //This is the first time an operator has been pressed
             leftValStr = runningNumber

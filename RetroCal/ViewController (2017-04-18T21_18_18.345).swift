@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         case Subtract = "-"
         case Add = "+"
         case Empty = "Empty"
+        case clearAll = "clear" //case for CLEAR button
     }
     
     var runningNumber = ""
@@ -85,11 +86,7 @@ class ViewController: UIViewController {
     
     //CLEAR button action function
     @IBAction func onClearPressed(sender: AnyObject) {
-        outputLbl.text = "0"
-        leftValStr = ""
-        rightValStr = ""
-        currentOperation = Operation.Empty
-        runningNumber = ""
+        processOperation(operation: .clearAll)
     }
     
     func processOperation(operation: Operation) {
@@ -118,23 +115,14 @@ class ViewController: UIViewController {
                 outputLbl.text = result
             }
             
-            //original equal button behavior
-            //currentOperation = operation
-            
             //modify equal button behavior
-            //runningNumber = result
+            runningNumber = result
             currentOperation = Operation.Empty
-            
         } else {
-            
-            if leftValStr != "" {
-                currentOperation = operation
-            } else {
-                //This is the first time an operator has been pressed
-                leftValStr = runningNumber
-                runningNumber = ""
-                currentOperation = operation
-            }
+            //This is the first time an operator has been pressed
+            leftValStr = runningNumber
+            runningNumber = ""
+            currentOperation = operation
         }
     }
 
